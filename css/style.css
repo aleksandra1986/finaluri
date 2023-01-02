@@ -1,6 +1,6 @@
 .box {
     max-width: 1440px;
-    background-color: #ebeff1;
+    background-color: #F6F8F9;
 
 }
 
@@ -469,7 +469,6 @@ footer {
     width: 30%;
     display: flex;
     justify-content: space-between;
-    border: 2px solid rebeccapurple;
 
 }
 
@@ -480,19 +479,20 @@ footer {
     justify-content: space-between;
     color: #CBD0D3;
     font-weight: bold;
-    border: 2px solid yellow;
+ 
 }
 
 .fp {
     font-size: 13px;
-    border: 2px solid blue;
 }
 
 .nav {
     width: 20%;
     display: flex;
     justify-content: space-between;
-    border: 3px solid pink;
+}
+i{
+    color: white;
 }
 
 /* page2 */
@@ -1032,6 +1032,7 @@ button {
     }
 
 
+
  
 
 
@@ -1077,22 +1078,195 @@ button {
         width: 90%;
         height: 75%;
         display: flex;
-        flex-direction: column;
+        flex-direction: none;
         justify-content: space-between;
+        
         margin: 61px auto 0px auto;
     
     }
+    .more_news {
+        width:90%;
+        height: 59%;
+        background-color: white;
+        border: 3px solid green;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+    }
+
+    .m {
+        width: 100%;
+        height: 90%;
+        margin-top: 10px;
+        border: 3px solid yellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+
+    .more {
+        border: 3px solid red;
+        width: 100%;
+        height: 40%;
+    }
+
+    .p4 {
+        margin-bottom: 0px;
+    }
+    .section2 {
+
+        height: 762px;
+        background-color: #F6F8F9;
+    }
+
+    .section {
+        border: 3px solid green;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #F6F8F9;
+    }
+
+    .cards {
+        height: 95%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+        height:45% ;
+    }
+    .p12 {
+        border: 3px solid green;
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+
+}
+/* section3 */
+.section3 {
+    border: 4px solid green;
+    background-color: #ebeff1;
+    width: 100%;
+   
+    margin-top: 20px;
 }
 
-@keyframes foto {
+.big_div {
+    border: 4px solid rgb(62, 73, 62);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 0px;
 
-    0% {
-        transform: none;
-        top: 0px;
-    }
 
-    100% {
-        transform: none;
+}
 
-    }
+.big_foto {
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    justify-content: space-around;
+
+}
+
+.big_foto1,
+.big_foto2 {
+
+    width: 100%;
+    height: 45%;
+}
+
+.big_foto1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.small_foto {
+    border: 3px solid black;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small_foto1,
+.small_foto2,
+.small_foto3 {
+    border: 2px solid grey;
+    width: 100%;
+    height: 31%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.sfd1,
+.sfd2,
+.sfd3 {
+    border: 2px solid blue;
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.sfd3 {
+    background-image: url(../image/road.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* footer */
+footer {
+    width: 100%;
+    background-color: #A6ADB4;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items:initial;
+    padding:30px 50px 20px 50px;
+    border: 3px solid green;
+}
+
+.logo {
+    display: none;
+
+}
+
+
+.nav {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+
+
+
+
+
 }
