@@ -11,12 +11,11 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 /* daiwyo header */
 header {
     width: 1440px;
-    ;
     height: 51px;
     margin: 0 auto;
     display: flex;
@@ -1086,21 +1085,46 @@ button:hover {
 
    header{
     width: 375px;
+    height: 93px;
     padding: 18px 20px 18px 20px;
 
    
    }
    nav{
-    display: none;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px 25px;
+    margin-top: 40px; 
+    top: 10%;
+    right: 13%;
+    width: 375px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid grey;
+   display: none;
    }
-  
+   .nav_visible{
+  display: block;
+   }
+  ul{
+    flex-direction: column;
+
+  }
  
   
    
    .icon{
     display: block;
 }
+
+.icon_burger{
+    background-color: #202124;
+  
+    width: 100px;
+    height: 50px;
    
+}
 
    .fa-bars{
     
@@ -1115,7 +1139,7 @@ button:hover {
         height: 866px;
         display: flex;
         flex-direction: column;
-margin-top: px;
+       margin-top:93px;
         background-color: white;
     }
 

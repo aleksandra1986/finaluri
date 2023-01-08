@@ -1,7 +1,8 @@
-const icon=document?.querySelecton('icon');
-const nav=document?.querySelecton(".nav");
+ (function(){
+const icon=document.querySelector('.icon');
+const nav=document.querySelector('nav');
+icon.addEventListener('click',() =>{
+    nav.classList.toggle('nav_visible')
+})
+ }())
 
-
-icon?.addEventListener ('click', () =>{
-nav.classlist.toggle('.nav_visible');
-}  );
