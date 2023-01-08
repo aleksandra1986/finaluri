@@ -1,7 +1,6 @@
 .box {
     width: 1440px;
     background-color: #F6F8F9;
-    border: 5px solid rgb(43, 42, 40);
     position: relative;
     font-family: 'Roboto', sans-serif;
 
@@ -21,7 +20,6 @@ header {
     padding: 20px 20px 11px 20px;
     gap: 75%;
     background-color: #F6F8F9;
-    border: 3px solid rgb(245, 11, 11);
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -68,7 +66,6 @@ li {
     font-size: 11px;
     color: #343638;
     cursor: pointer;
-    /* font-family: 'Roboto'; */
 }
 
 li:hover {
@@ -92,13 +89,11 @@ li:hover {
     width: 1440px;
     height: 599px;
     display: flex;
-    border: 8px solid rgb(83, 87, 83);
 }
 
 .foto {
     width: 60%;
     height: 100%;
-    border: 3px solid blue;
     background-image: url(../image/bigfoto.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +105,6 @@ li:hover {
 }
 
 .world_news {
-    border: 3px solid yellow;
     width: 65%;
     height: 40%;
     display: flex;
@@ -130,7 +124,6 @@ h1,
 
 h1::after {
     content: "";
-    /* margin-bottom: 3px solid red ; */
     width: 100%;
     height: 1.5px;
     background-color: white;
@@ -158,7 +151,6 @@ button {
     width: 40%;
     height: 100%;
     background-color: white;
-    border: 3px solid green;
 
 
 }
@@ -166,7 +158,6 @@ button {
 .m {
     width: 100%;
     height: 90%;
-    border: 3px solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -175,7 +166,6 @@ button {
 }
 
 .text {
-    border: 5px solid pink;
     width: 70%;
     height: 70%;
     margin: 100px auto 100px auto;
@@ -194,10 +184,6 @@ h2::after {
     background-color: #d6dadf;
     display: block;
     margin-top: 20px;
-}
-
-.more {
-    border: 3px solid red;
 }
 
 h3 {
@@ -231,7 +217,6 @@ h3 {
 
 /* daiwyo section2 */
 .section2 {
-    border: 5px solid red;
     width: 100%;
     height: 410px;
     margin-top: 40px;
@@ -242,14 +227,12 @@ h3 {
 }
 
 .section {
-    border: 3px solid green;
     width: 80%;
     height: 100%;
     margin: 0 auto;
 }
 
 .cards {
-    border: 3px solid blue;
     width: 100%;
     height: 350px;
     margin: 20px auto;
@@ -260,7 +243,6 @@ h3 {
 .card1,
 .card2,
 .card3 {
-    border: 3px solid yellow;
     background-color: white;
     width: 32%;
     height: 100%;
@@ -280,7 +262,6 @@ h4 {
     width: 100%;
     height: 50%;
     margin-bottom: 40px;
-    border: 2px solid red;
     border-radius: 7px;
 
 }
@@ -291,7 +272,6 @@ h4 {
     background-size: cover;
     opacity: 1;
     transition: all 4s ease;
-    background-color: rgb(0, 0, 0, .8);
 
 
 
@@ -332,7 +312,6 @@ h4 {
 
 
 .p12 {
-    border: 3px solid green;
     width: 80%;
     height: 40%;
     margin: 0 auto;
@@ -351,7 +330,6 @@ h4 {
 }
 
 .big_div {
-    border: 4px solid green;
     width: 80%;
     height: 900px;
     margin: 40px auto 0 auto;
@@ -360,7 +338,6 @@ h4 {
 }
 
 .big_foto {
-    border: 3px solid blueviolet;
     width: 65%;
     height: 100%;
     display: flex;
@@ -370,7 +347,6 @@ h4 {
 
 .big_foto1,
 .big_foto2 {
-    border: 3px solid yellow;
     width: 100%;
     height: 46%;
 }
@@ -388,7 +364,6 @@ h4 {
 }
 
 .big_foto_p {
-    border: 2px solid red;
     width: 90%;
     height: 70%;
     color: white;
@@ -399,8 +374,7 @@ h4 {
 }
 
 .small_foto {
-    border: 3px solid black;
-    width: 32%;
+        width: 32%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -410,7 +384,7 @@ h4 {
 .small_foto1,
 .small_foto2,
 .small_foto3 {
-    border: 2px solid grey;
+    
     width: 100%;
     height: 31%;
     display: flex;
@@ -423,7 +397,7 @@ h4 {
 .sfd1,
 .sfd2,
 .sfd3 {
-    border: 2px solid blue;
+   
     width: 100%;
     height: 70%;
     border-radius: 5px;
@@ -473,7 +447,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 53px 135.8px 61px 45px;
-    border: 3px solid green;
+   
 }
 
 .logo {
@@ -510,7 +484,7 @@ i {
 /* page2 */
 /* section */
 .sectionwn {
-    border: 3px solid red;
+    
     width: 80%;
     height: 495px;
     margin: 0 auto 37px auto;
@@ -520,7 +494,7 @@ i {
 }
 
 .fotown {
-    border: 2px solid green;
+  
     width: 50%;
     height: 100%;
     background-image: url(../image/sahara.svg);
@@ -541,7 +515,7 @@ i {
 }
 
 .textwns {
-    border: 3px solid rgb(44, 44, 4);
+   
     height: 100%;
     width: 50%;
     padding: 118px 0 125px 0;
@@ -549,7 +523,7 @@ i {
 }
 
 form {
-    border: 4px solid rgb(79, 12, 141);
+   
     width: 70%;
     height: 252px;
     margin: 0 auto;
@@ -561,7 +535,7 @@ form {
 }
 
 .sd {
-    border: 2px solid purple;
+  
     width: 100%;
     height: 70%;
     margin: 0 auto;
@@ -592,7 +566,7 @@ button {
 
 button:hover {
     background-color: #343638;
-    border: 2px solid red;
+  
     cursor: cell;
 }
 
@@ -615,9 +589,7 @@ button:hover {
     width: 30%;
     display: flex;
     flex-direction: column;
-
-    border: 3px solid green;
-    margin-bottom: 25px;
+      margin-bottom: 25px;
 
 }
 
@@ -636,14 +608,14 @@ button:hover {
 }
 
 .text11 {
-    border: 3px solid purple;
+   
     display: flex;
     justify-content: space-around;
     width: 70%;
 }
 
 .text1 {
-    border: 3px solid yellow;
+  
     font-size: 14px;
     width: 45%;
     height: 80%;
@@ -658,7 +630,7 @@ button:hover {
     height: 830px;
     ;
     margin: 0 auto 151px auto;
-    border: 3px solid red;
+   
 
 }
 
@@ -669,15 +641,13 @@ button:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 3px solid green;
+  
 }
 
 .eleptext {
     width: 100%;
     height: 40%;
-
-    border: 2px solid red;
-}
+   }
 
 .elp {
     width: 99.5%;
@@ -686,14 +656,13 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 3px solid green;
-}
+    }
 
 .elp1 {
     font-size: 14px;
     color: #A6ADB4;
     line-height: 1.5;
-    border: 2px solid red
+    
 }
 
 /* daicyo tabletis rezolucia */
@@ -737,7 +706,7 @@ button:hover {
     .foto {
         width: 100%;
         height: 60%;
-        border: 3px solid blue;
+       
         background-image: url(../image/bigfoto.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -748,8 +717,7 @@ button:hover {
         width: 80%;
         height: 40%;
         background-color: white;
-        border: 3px solid green;
-        margin: 0 auto;
+         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -761,7 +729,7 @@ button:hover {
         width: 100%;
         height: 70%;
         margin-top: 10px;
-        border: 3px solid yellow;
+        
         flex-direction: unset;
     }
 
@@ -773,7 +741,7 @@ button:hover {
     }
 
     .more {
-        border: 3px solid red;
+        
         width: 40%;
         height: 100%;
     }
@@ -789,7 +757,7 @@ button:hover {
     }
 
     .section {
-        border: 3px solid green;
+       
         width: 100%;
         margin: 0 auto;
     }
@@ -921,7 +889,7 @@ button:hover {
     }
 
     .fotown {
-        border: 2px solid green;
+        
         width: 100%;
         height: 50%;
         background-image: url(../image/sahara.svg);
@@ -933,7 +901,7 @@ button:hover {
 
 
     .textwns {
-        border: 3px solid rgb(44, 44, 4);
+      
         height: 50%;
         width: 100%;
         padding: 85px 0 125px 0;
@@ -941,7 +909,7 @@ button:hover {
     }
 
     form {
-        border: 4px solid rgb(79, 12, 141);
+        
         width: 70%;
         height: 250px;
         margin: 0 auto;
@@ -953,7 +921,7 @@ button:hover {
     }
 
     .sd {
-        border: 2px solid purple;
+       
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -1000,13 +968,13 @@ button:hover {
         height: 20%;
         display: flex;
         flex-direction: column;
-        border: 3px solid green;
+       
         margin-bottom: 0px;
 
     }
 
     .text11 {
-        border: 3px solid purple;
+       
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -1014,7 +982,7 @@ button:hover {
     }
 
     .text1 {
-        border: 3px solid yellow;
+       
         font-size: 14px;
         width: 45%;
         height: 100%;
@@ -1028,7 +996,7 @@ button:hover {
         width: 80%;
         height: 757px;
         margin: 0 auto 143px auto;
-        border: 3px solid red;
+        
 
     }
 
@@ -1046,7 +1014,7 @@ button:hover {
         width: 100%;
         height: 60%;
 
-        border: 2px solid red;
+      
     }
 
     .elp {
@@ -1056,7 +1024,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 3px solid green;
+        
     }
 
     .elp1 {
@@ -1064,7 +1032,7 @@ button:hover {
         height: 45%;
         color: #A6ADB4;
         line-height: 1.5;
-        border: 2px solid red
+      
     }
 
     @keyframes eleph {
@@ -1166,7 +1134,7 @@ button:hover {
     .foto {
         width: 100%;
         height: 40%;
-        border: 3px solid blue;
+        
         background-image: url(../image/bigfoto.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -1174,7 +1142,7 @@ button:hover {
     }
 
     .world_news {
-        border: 3px solid yellow;
+      
         width: 90%;
         height: 75%;
         display: flex;
@@ -1189,8 +1157,7 @@ button:hover {
         width: 90%;
         height: 59%;
         background-color: white;
-        border: 3px solid green;
-        margin: 0 auto;
+               margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -1202,7 +1169,7 @@ button:hover {
         width: 100%;
         height: 90%;
         margin-top: 10px;
-        border: 3px solid yellow;
+       
         display: flex;
         flex-direction: column;
     }
@@ -1210,7 +1177,7 @@ button:hover {
 
 
     .more {
-        border: 3px solid red;
+       
         width: 100%;
         height: 40%;
     }
@@ -1226,7 +1193,7 @@ button:hover {
     }
 
     .section {
-        border: 3px solid green;
+    
         width: 90%;
         margin: 0 auto;
         background-color: #F6F8F9;
@@ -1249,7 +1216,7 @@ button:hover {
     }
 
     .p12 {
-        border: 3px solid green;
+       
         width: 100%;
         height: 40%;
         margin: 0 auto;
@@ -1258,7 +1225,7 @@ button:hover {
 
     /* section3 */
     .section3 {
-        border: 4px solid green;
+   
         background-color: #ebeff1;
         width: 100%;
 
@@ -1266,7 +1233,7 @@ button:hover {
     }
 
     .big_div {
-        border: 4px solid rgb(62, 73, 62);
+      
         width: 100%;
         height: 100%;
         display: flex;
@@ -1301,7 +1268,7 @@ button:hover {
     }
 
     .small_foto {
-        border: 3px solid black;
+       
         width: 100%;
         height: 55%;
         display: flex;
@@ -1312,7 +1279,7 @@ button:hover {
     .small_foto1,
     .small_foto2,
     .small_foto3 {
-        border: 2px solid grey;
+       
         width: 100%;
         height: 31%;
         display: flex;
@@ -1325,7 +1292,7 @@ button:hover {
     .sfd1,
     .sfd2,
     .sfd3 {
-        border: 2px solid blue;
+        
         width: 100%;
         height: 70%;
         border-radius: 5px;
@@ -1352,7 +1319,7 @@ button:hover {
         display: flex;
         align-items: initial;
         padding: 50px 50px 30px 50px;
-        border: 3px solid green;
+        
     }
 
     .logo {
@@ -1387,7 +1354,7 @@ button:hover {
     }
 
     .fotown {
-        border: 2px solid green;
+      
         width: 100%;
         height: 70%;
         background-image: url(../image/sahara.svg);
@@ -1399,7 +1366,7 @@ button:hover {
 
 
     .textwns {
-        border: 3px solid rgb(44, 44, 4);
+        
         height: 80%;
         width: 100%;
         padding: 50px 0 50px 0;
@@ -1407,7 +1374,7 @@ button:hover {
     }
 
     form {
-        border: 4px solid rgb(17, 4, 29);
+       
         width: 95%;
         height: 326px;
         margin: 0 auto 0 auto;
@@ -1419,7 +1386,7 @@ button:hover {
     }
 
     .sd {
-        border: 2px solid purple;
+        
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -1466,13 +1433,13 @@ button:hover {
         height: 20%;
         display: flex;
         flex-direction: column;
-        border: 3px solid green;
+        
         margin-bottom: 10px;
 
     }
 
     .text11 {
-        border: 3px solid purple;
+       
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1482,7 +1449,7 @@ button:hover {
     }
 
     .text1 {
-        border: 3px solid yellow;
+      
         font-size: 14px;
         width: 100%;
         height: 50%;
@@ -1496,7 +1463,7 @@ button:hover {
         width: 100%;
         height: 697px;
         margin: 0 auto 126px auto;
-        border: 3px solid rgb(0, 255, 21);
+       
 
     }
 
@@ -1508,14 +1475,14 @@ button:hover {
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 3px solid rgb(18, 20, 18);
+       
     }
 
     .eleptext {
         width: 100%;
         height: 95%;
 
-        border: 2px solid red;
+       
     }
 
     .elp {
@@ -1525,7 +1492,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 3px solid green;
+       
     }
 
     .elp1 {
@@ -1533,7 +1500,7 @@ button:hover {
         height: 40%;
         color: #A6ADB4;
         line-height: 1.5;
-        border: 2px solid red
+        
     }
 
 }
