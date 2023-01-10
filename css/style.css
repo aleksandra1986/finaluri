@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .box {
-    width: 1440px;
+    width: 90rem;
+    margin: 0 auto;
     background-color: #F6F8F9;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -13,9 +21,11 @@
 
 /* daiwyo header */
 header {
-    width: 1440px;
-    height: 51px;
+    width: 90rem;
+    height: 3.1875rem;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 20px 20px 11px 20px;
     gap: 75%;
@@ -30,8 +40,12 @@ header {
 .header {
     width: 1440px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 
 
@@ -39,27 +53,49 @@ header {
 
 
 .ml {
-    animation-name: foto;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: foto;
+            animation-name: foto;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes foto {
+
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        top: 0px;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+
+    }
 }
 
 @keyframes foto {
 
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
         top: 0px;
     }
 
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
 
     }
 }
 
 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    gap: 31px;
+    gap: 1.9375rem;
 }
 
 li {
@@ -86,8 +122,10 @@ li:hover {
 
 /* daiwyo section1 */
 .section1 {
-    width: 1440px;
+    width: 90rem;
     height: 599px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -101,15 +139,23 @@ li:hover {
 }
 
 .foto:hover {
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .world_news {
     width: 65%;
     height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     margin: 176px auto 176px auto;
 
@@ -117,7 +163,7 @@ li:hover {
 
 h1,
 .p1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
 }
@@ -128,19 +174,19 @@ h1::after {
     height: 1.5px;
     background-color: white;
     display: block;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .p2 {
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 
 }
 
 button {
     width: 25%;
-    height: 40px;
-    font-size: 11px;
+    height: 2.5rem;
+    font-size: 0.6875rem;
     color: white;
     background-color: #FA6980;
     border-radius: 10px;
@@ -158,9 +204,15 @@ button {
 .m {
     width: 100%;
     height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
 
 }
@@ -172,7 +224,7 @@ button {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -187,7 +239,7 @@ h2::after {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #FA6980;
     margin-bottom: 20px;
@@ -195,21 +247,21 @@ h3 {
 }
 
 .p3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #202124;
     margin-bottom: 10px;
 }
 
 .p4 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 
 
 }
 
 .p4,
 .p5 {
-    font-size: 16px;
+    font-size: 1rem;
     color: #A6ADB4;
     line-height: 1.5;
 
@@ -218,11 +270,19 @@ h3 {
 /* daiwyo section2 */
 .section2 {
     width: 100%;
-    height: 410px;
-    margin-top: 40px;
+    height: 25.625rem;
+    margin-top: 2.5rem
+    ;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #F6F8F9;
 }
 
@@ -234,10 +294,14 @@ h3 {
 
 .cards {
     width: 100%;
-    height: 350px;
+    height: 21.875rem;
     margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card1,
@@ -247,14 +311,21 @@ h3 {
     width: 32%;
     height: 100%;
     border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 h4 {
 
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -271,6 +342,8 @@ h4 {
     background-position: center;
     background-size: cover;
     opacity: 1;
+    -webkit-transition: all 4s ease;
+    -o-transition: all 4s ease;
     transition: all 4s ease;
 
 
@@ -290,8 +363,11 @@ h4 {
 }
 
 .umbrella:hover {
-    box-shadow: 10px 20px 15px rgb(235, 47, 47),
+    -webkit-box-shadow: 10px 20px 15px rgb(235, 47, 47),
         -10px -20px 15px rgb(235, 47, 47);
+            box-shadow: 10px 20px 15px rgb(235, 47, 47),
+        -10px -20px 15px rgb(235, 47, 47);
+    cursor: -webkit-grab;
     cursor: grab;
 }
 
@@ -304,8 +380,12 @@ h4 {
 }
 
 .sky:hover {
-    transform: scaley(2);
-    transform: scaley(1.5);
+    -webkit-transform: scaley(2);
+        -ms-transform: scaley(2);
+            transform: scaley(2);
+    -webkit-transform: scaley(1.5);
+        -ms-transform: scaley(1.5);
+            transform: scaley(1.5);
 
 }
 
@@ -333,16 +413,27 @@ h4 {
     width: 80%;
     height: 900px;
     margin: 40px auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .big_foto {
     width: 65%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .big_foto1,
@@ -368,17 +459,31 @@ h4 {
     height: 70%;
     color: white;
     margin: 40px auto 66px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .small_foto {
         width: 32%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .small_foto1,
@@ -387,10 +492,17 @@ h4 {
     
     width: 100%;
     height: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: white;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-radius: 5px;
 }
 
@@ -408,13 +520,23 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation-name: eleph;
-    animation-duration: 7s;
+    -webkit-animation-name: eleph;
+            animation-name: eleph;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+@-webkit-keyframes eleph {
+    50% {
+        -webkit-transform: scale(150%);
+                transform: scale(150%);
+    }
 }
 
 @keyframes eleph {
     50% {
-        transform: scale(150%);
+        -webkit-transform: scale(150%);
+                transform: scale(150%);
     }
 }
 
@@ -443,38 +565,59 @@ footer {
     width: 80%;
     height: 200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 53px 135.8px 61px 45px;
    
 }
 
 .logo {
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
 .f {
     height: 86px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #CBD0D3;
     font-weight: bold;
 
 }
 
 .fp {
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .nav {
     width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 i {
@@ -489,6 +632,8 @@ i {
     height: 495px;
     margin: 0 auto 37px auto;
     background-color: azure;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 51px;
 }
@@ -506,7 +651,7 @@ i {
 
 .wnp {
     color: white;
-    font-size: 30px;
+    font-size: 1.875rem;
     position: relative;
     top: 47%;
     left: 33%;
@@ -527,9 +672,16 @@ form {
     width: 70%;
     height: 252px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 
 }
@@ -539,13 +691,18 @@ form {
     width: 100%;
     height: 70%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 label {
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: bold;
 }
 
@@ -577,18 +734,29 @@ button:hover {
     margin: 0 auto 40px auto;
     border-bottom: 3px solid rgb(211, 209, 209);
     border-top: 3px solid rgb(211, 209, 209);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 .saxe {
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
       margin-bottom: 25px;
 
 }
@@ -602,21 +770,26 @@ button:hover {
 
 .ip {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 1.5;
     font-weight: bold;
 
 }
 
 .text11 {
    
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 70%;
 }
 
 .text1 {
   
-    font-size: 14px;
+    font-size: 0.875rem;
     width: 45%;
     height: 80%;
     color: #A6ADB4;
@@ -628,7 +801,6 @@ button:hover {
 .sectioneleph {
     width: 80%;
     height: 830px;
-    ;
     margin: 0 auto 151px auto;
    
 
@@ -653,13 +825,19 @@ button:hover {
     width: 99.5%;
     height: 70%;
     margin-top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     }
 
 .elp1 {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #A6ADB4;
     line-height: 1.5;
     
@@ -682,8 +860,12 @@ button:hover {
     .header {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     
     li:hover {
@@ -697,8 +879,13 @@ button:hover {
     .section1 {
         width: 100%;
         height: 742px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         background-color: white;
     }
@@ -718,9 +905,15 @@ button:hover {
         height: 40%;
         background-color: white;
          margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
 
     }
@@ -729,8 +922,10 @@ button:hover {
         width: 100%;
         height: 70%;
         margin-top: 10px;
-        
-        flex-direction: unset;
+        -webkit-box-orient: unset;
+        -webkit-box-direction: unset;
+            -ms-flex-direction: unset;
+                flex-direction: unset;
     }
 
     .text {
@@ -757,13 +952,13 @@ button:hover {
     }
 
     .section {
-       
         width: 100%;
         margin: 0 auto;
     }
 
     .cards {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .card3 {
@@ -783,7 +978,7 @@ button:hover {
     .section3 {
         background-color: #ebeff1;
         width: 100%;
-        height: 1242px;
+        height: 77.625rem;
         margin-top: 40px;
     }
 
@@ -791,10 +986,17 @@ button:hover {
         border: 4px solid rgb(62, 73, 62);
         width: 80%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        gap: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+        gap: 1.875rem;
 
 
     }
@@ -803,9 +1005,16 @@ button:hover {
 
         width: 100%;
         height: 67%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: unset;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
 
     }
 
@@ -827,9 +1036,15 @@ button:hover {
 
         width: 100%;
         height: 23%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: unset;
-        justify-content: space-around;
+        -webkit-box-orient: unset;
+        -webkit-box-direction: unset;
+            -ms-flex-direction: unset;
+                flex-direction: unset;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .small_foto1,
@@ -837,10 +1052,17 @@ button:hover {
 
         width: 45%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background-color: white;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         border-radius: 5px;
     }
 
@@ -852,8 +1074,12 @@ button:hover {
     .footer {
         width: 100%;
         height: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 53px 65.8px 26.5px 85px;
 
     }
@@ -861,8 +1087,12 @@ button:hover {
     .logo {
         width: 60%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
     }
 
@@ -876,13 +1106,18 @@ button:hover {
         height: 800px;
         margin: 51px auto 37px auto;
         background-color: azure;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .wnp {
         color: white;
-        font-size: 32px;
+        font-size: 2rem;
 
         top: 45%;
         left: 35%;
@@ -913,9 +1148,16 @@ button:hover {
         width: 70%;
         height: 250px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
 
     }
@@ -924,13 +1166,18 @@ button:hover {
        
         width: 100%;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     label {
         margin-bottom: 10px;
-        font-size: 13px;
+        font-size: 0.8125rem;
         font-weight: bold;
     }
 
@@ -956,18 +1203,31 @@ button:hover {
         margin: 0 auto 40px auto;
         border-bottom: 3px solid rgb(211, 209, 209);
         border-top: 3px solid rgb(211, 209, 209);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
 
     .saxe {
         width: 100%;
         height: 20%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
        
         margin-bottom: 0px;
 
@@ -975,15 +1235,21 @@ button:hover {
 
     .text11 {
        
+        display: -webkit-box;
+       
+        display: -ms-flexbox;
+       
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 100%;
         height: 60%;
     }
 
     .text1 {
        
-        font-size: 14px;
+        font-size: 0.875rem;
         width: 45%;
         height: 100%;
         color: #A6ADB4;
@@ -1021,23 +1287,39 @@ button:hover {
         width: 99.5%;
         height: 90%;
         margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         
     }
 
     .elp1 {
-        font-size: 14px;
+        font-size: 0.875rem;
         height: 45%;
         color: #A6ADB4;
         line-height: 1.5;
       
     }
 
+    @-webkit-keyframes eleph {
+        50% {
+            -webkit-transform: none;
+                    transform: none;
+
+        }
+    }
+
     @keyframes eleph {
         50% {
-            transform: none;
+            -webkit-transform: none;
+                    transform: none;
 
         }
     }
@@ -1052,15 +1334,31 @@ button:hover {
         width: 375px;
         margin: 0 auto;
     }
-    @keyframes foto {
+    @-webkit-keyframes foto {
 
         0% {
-            transform: none(0deg);
+            -webkit-transform: none(0deg);
+                    transform: none(0deg);
             top: 0px;
         }
 
         100% {
-            transform: none(360deg);
+            -webkit-transform: none(360deg);
+                    transform: none(360deg);
+
+        }
+    }
+    @keyframes foto {
+
+        0% {
+            -webkit-transform: none(0deg);
+                    transform: none(0deg);
+            top: 0px;
+        }
+
+        100% {
+            -webkit-transform: none(360deg);
+                    transform: none(360deg);
 
         }
     }
@@ -1082,21 +1380,30 @@ button:hover {
     position: fixed;
     text-align: center;
     vertical-align: middle;
-    padding: 40px 25px;
+    padding: 25px 25px;
     margin-top: 40px; 
     top: 10%;
-    right: 10%;
+    right: 16%;
     width: 375px;
     height: 250px;
     background-color: white;
     border: 2px solid grey;
-   display: none;
+    display: none;
+    
    }
    .nav_visible{
   display: block;
    }
+   .a {
+    color: #343638;
+    font-weight: normal;
+}
+
   ul{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
   }
  
@@ -1109,8 +1416,8 @@ button:hover {
 .icon_burger{
     background-color: #202124;
   
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
    
 }
 
@@ -1125,8 +1432,13 @@ button:hover {
     .section1 {
         width: 100%;
         height: 866px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
        margin-top:93px;
         background-color: white;
     }
@@ -1145,9 +1457,16 @@ button:hover {
       
         width: 90%;
         height: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: none;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: none;
+                flex-direction: none;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         margin: 61px auto 0px auto;
 
@@ -1158,9 +1477,15 @@ button:hover {
         height: 59%;
         background-color: white;
                margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
 
     }
@@ -1170,8 +1495,15 @@ button:hover {
         height: 90%;
         margin-top: 10px;
        
+        display: -webkit-box;
+       
+        display: -ms-flexbox;
+       
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
 
@@ -1201,8 +1533,12 @@ button:hover {
 
     .cards {
         height: 95%;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .card3 {
@@ -1236,9 +1572,16 @@ button:hover {
       
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: unset;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
         gap: 0px;
 
 
@@ -1248,10 +1591,18 @@ button:hover {
 
         width: 100%;
         height: 40%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
     }
 
@@ -1271,9 +1622,16 @@ button:hover {
        
         width: 100%;
         height: 55%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .small_foto1,
@@ -1282,10 +1640,17 @@ button:hover {
        
         width: 100%;
         height: 31%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background-color: white;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         border-radius: 5px;
     }
 
@@ -1316,8 +1681,12 @@ button:hover {
         width: 100%;
         height: 100px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: initial;
+        -webkit-box-align: initial;
+            -ms-flex-align: initial;
+                align-items: initial;
         padding: 50px 50px 30px 50px;
         
     }
@@ -1330,8 +1699,12 @@ button:hover {
 
     .nav {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
 
     }
@@ -1342,9 +1715,16 @@ button:hover {
         height: 714px;
         margin: 93px auto 40px auto;
         background-color: azure;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .wnp {
@@ -1378,9 +1758,15 @@ button:hover {
         width: 95%;
         height: 326px;
         margin: 0 auto 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
 
     }
@@ -1389,13 +1775,18 @@ button:hover {
         
         width: 100%;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     label {
         margin-bottom: 20px;
-        font-size: 13px;
+        font-size: 0.8125rem;
         font-weight: bold;
     }
 
@@ -1421,18 +1812,31 @@ button:hover {
         margin: 0 auto 20px auto;
         border-bottom: 3px solid rgb(211, 209, 209);
         border-top: 3px solid rgb(211, 209, 209);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
 
     .saxe {
         width: 100%;
         height: 20%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
         margin-bottom: 10px;
 
@@ -1440,9 +1844,18 @@ button:hover {
 
     .text11 {
        
+        display: -webkit-box;
+       
+        display: -ms-flexbox;
+       
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 20px;
         width: 100%;
         height: 60%;
@@ -1450,7 +1863,7 @@ button:hover {
 
     .text1 {
       
-        font-size: 14px;
+        font-size: 0.875rem;
         width: 100%;
         height: 50%;
         color: #A6ADB4;
@@ -1489,14 +1902,21 @@ button:hover {
         width: 99.5%;
         height: 90%;
         margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
        
     }
 
     .elp1 {
-        font-size: 14px;
+        font-size: 0.875rem;
         height: 40%;
         color: #A6ADB4;
         line-height: 1.5;
